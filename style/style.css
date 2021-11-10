@@ -13,8 +13,30 @@ body {
   font-family: Montserrat;
 }
 
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  background: #1e2939;
+  width: 370px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-me-container {
+  background: #ffffff;
+  padding-left: 90px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  padding-right: 90px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
 @media (min-width: 480px) and (max-width: 767px) {
-  .wrapper-all {
+  .wrapper {
     display: block;
     background: #ffffff;
     width: 370px;
@@ -43,7 +65,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1300px) {
   .wrapper {
-    display: flex;
+    /* display: flex; */
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -63,28 +85,6 @@ body {
     padding-right: 90px;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
   }
-}
-
-.wrapper {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.sidebar {
-  background: #1e2939;
-  width: 370px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.about-me-container {
-  background: #ffffff;
-  padding-left: 90px;
-  padding-top: 110px;
-  padding-bottom: 110px;
-  padding-right: 90px;
-  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 .my-photo {
