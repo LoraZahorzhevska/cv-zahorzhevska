@@ -13,12 +13,62 @@ body {
   font-family: Montserrat;
 }
 
+@media (min-width: 480px) and (max-width: 767px) {
+  .wrapper-all {
+    display: block;
+    background: #ffffff;
+    width: 370px;
+    max-width: 768px;
+    margin: 0 auto;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .sidebar {
+    background: #1e2939;
+    width: 370px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .about-me-container {
+    width: 370px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    background: #1e2939;
+    width: 370px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .about-me-container {
+    background: #ffffff;
+    padding-left: 90px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-right: 90px;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
 .wrapper {
-  background: #ffffff;
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar {
@@ -28,15 +78,17 @@ body {
   padding-bottom: 40px;
 }
 
-.my-photo {
-  width: 370px;
-}
-
 .about-me-container {
+  background: #ffffff;
   padding-left: 90px;
   padding-top: 110px;
   padding-bottom: 110px;
   padding-right: 90px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+.my-photo {
+  width: 370px;
 }
 
 .contacts-container {
@@ -58,6 +110,12 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: #343c5a;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #ffffff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-title {
